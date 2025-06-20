@@ -1,0 +1,38 @@
+[0.746s] Invoking command in '/home/yasmin/ptp_ws/src/ros2_aruco': PYTHONPATH=/home/yasmin/ptp_ws/build/ros2_aruco/prefix_override:/home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros2_aruco build --build-base /home/yasmin/ptp_ws/build/ros2_aruco/build install --record /home/yasmin/ptp_ws/build/ros2_aruco/install.log --single-version-externally-managed
+[1.043s] running egg_info
+[1.043s] writing ../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+[1.044s] writing dependency_links to ../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+[1.044s] writing entry points to ../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+[1.045s] writing requirements to ../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+[1.045s] writing top-level names to ../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+[1.047s] reading manifest file '../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[1.047s] adding license file 'LICENSE'
+[1.048s] writing manifest file '../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[1.049s] running build
+[1.049s] running build_py
+[1.049s] copying ros2_aruco/orientation.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+[1.050s] copying ros2_aruco/aruco_node2.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+[1.050s] copying ros2_aruco/robot.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+[1.050s] copying ros2_aruco/panel.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+[1.051s] running install
+[1.051s] running install_lib
+[1.053s] copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/orientation.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[1.053s] copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/aruco_node2.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[1.053s] copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/robot.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[1.053s] copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/panel.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+[1.054s] byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/orientation.py to orientation.cpython-310.pyc
+[1.056s] byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/aruco_node2.py to aruco_node2.cpython-310.pyc
+[1.057s] byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/robot.py to robot.cpython-310.pyc
+[1.058s] byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/panel.py to panel.cpython-310.pyc
+[1.059s] running install_data
+[1.060s] copying urdf_model/Meshes/Base.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+[1.087s] running install_egg_info
+[1.089s] removing '/home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info' (and everything under it)
+[1.090s] Copying ../../build/ros2_aruco/ros2_aruco.egg-info to /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info
+[1.091s] running install_scripts
+[1.109s] Installing aruco_node2 script to /home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco
+[1.110s] Installing orientation script to /home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco
+[1.110s] Installing panel script to /home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco
+[1.110s] Installing robot script to /home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco
+[1.111s] writing list of installed files to '/home/yasmin/ptp_ws/build/ros2_aruco/install.log'
+[1.136s] Invoked command in '/home/yasmin/ptp_ws/src/ros2_aruco' returned '0': PYTHONPATH=/home/yasmin/ptp_ws/build/ros2_aruco/prefix_override:/home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros2_aruco build --build-base /home/yasmin/ptp_ws/build/ros2_aruco/build install --record /home/yasmin/ptp_ws/build/ros2_aruco/install.log --single-version-externally-managed

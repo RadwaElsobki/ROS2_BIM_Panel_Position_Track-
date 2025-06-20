@@ -1,0 +1,522 @@
+[INFO] [launch]: All log files can be found below /home/yasmin/.ros/log/2023-02-10-14-07-27-674810-yasmin-XPS-15-9560-6270
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot-1]: process started with pid [6272]
+[INFO] [robot_state_publisher-2]: process started with pid [6274]
+[INFO] [joy_node-3]: process started with pid [6276]
+[INFO] [panel-4]: process started with pid [6278]
+[INFO] [rviz2-5]: process started with pid [6280]
+[INFO] [aruco_node2-6]: process started with pid [6282]
+[rviz2-5] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[robot_state_publisher-2] Link H_Motor had 1 children
+[robot_state_publisher-2] Link Arm had 1 children
+[robot_state_publisher-2] Link Translation had 1 children
+[robot_state_publisher-2] Link V_Motor had 1 children
+[robot_state_publisher-2] Link R_Motor had 1 children
+[robot_state_publisher-2] Link Head had 0 children
+[robot_state_publisher-2] [INFO] [1676034447.946600624] [robot_state_publisher]: got segment Arm
+[robot_state_publisher-2] [INFO] [1676034447.946738184] [robot_state_publisher]: got segment Base
+[robot_state_publisher-2] [INFO] [1676034447.946759207] [robot_state_publisher]: got segment H_Motor
+[robot_state_publisher-2] [INFO] [1676034447.946770766] [robot_state_publisher]: got segment Head
+[robot_state_publisher-2] [INFO] [1676034447.946779252] [robot_state_publisher]: got segment R_Motor
+[robot_state_publisher-2] [INFO] [1676034447.946788145] [robot_state_publisher]: got segment Translation
+[robot_state_publisher-2] [INFO] [1676034447.946797054] [robot_state_publisher]: got segment V_Motor
+[rviz2-5] [INFO] [1676034448.212997093] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-5] [INFO] [1676034448.213159458] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-5] [INFO] [1676034448.234354413] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-5] [INFO] [1676034448.401358587] [rviz2]: Stereo is NOT SUPPORTED
+[robot-1] [INFO] [1676034448.468113931] [robot]: robot is on
+[joy_node-3] [INFO] [1676034448.665580748] [joy_node]: No haptic (rumble) available, skipping initialization
+[joy_node-3] [INFO] [1676034448.665699806] [joy_node]: Opened joystick: Nacon GC100.  deadzone: 0.050000
+[robot-1] Traceback (most recent call last):
+[robot-1]   File "/home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco/robot", line 33, in <module>
+[robot-1]     sys.exit(load_entry_point('ros2-aruco==0.1.0', 'console_scripts', 'robot')())
+[robot-1]   File "/home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/robot.py", line 349, in main
+[robot-1]     rclpy.spin(robot)
+[robot-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[robot-1]     executor.spin_once()
+[robot-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 713, in spin_once
+[robot-1]     raise handler.exception()
+[robot-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 239, in __call__
+[robot-1]     self._handler.send(None)
+[robot-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 418, in handler
+[robot-1]     await call_coroutine(entity, arg)
+[robot-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 343, in _execute_subscription
+[robot-1]     await await_or_execute(sub.callback, msg)
+[robot-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[robot-1]     return callback(*args)
+[robot-1]   File "/home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/robot.py", line 181, in getJoystickInput
+[robot-1]     self.x += self.speed_factor * msg.axes[6]
+[robot-1] IndexError: array index out of range
+[ERROR] [robot-1]: process has died [pid 6272, exit code 1, cmd '/home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco/robot --ros-args'].
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-2] [INFO] [1676034453.471733369] [rclcpp]: signal_handler(signum=2)
+[rviz2-5] [INFO] [1676034453.471737441] [rclcpp]: signal_handler(signum=2)
+[joy_node-3] [INFO] [1676034453.471731100] [rclcpp]: signal_handler(signum=2)
+[aruco_node2-6] Traceback (most recent call last):
+[aruco_node2-6]   File "/home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco/aruco_node2", line 33, in <module>
+[aruco_node2-6]     sys.exit(load_entry_point('ros2-aruco==0.1.0', 'console_scripts', 'aruco_node2')())
+[aruco_node2-6]   File "/home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/aruco_node2.py", line 145, in main
+[aruco_node2-6]     rclpy.spin(node)
+[aruco_node2-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[aruco_node2-6]     executor.spin_once()
+[aruco_node2-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 705, in spin_once
+[aruco_node2-6]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[aruco_node2-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 691, in wait_for_ready_callbacks
+[aruco_node2-6]     return next(self._cb_iter)
+[aruco_node2-6]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 588, in _wait_for_ready_callbacks
+[aruco_node2-6]     wait_set.wait(timeout_nsec)
+[aruco_node2-6] KeyboardInterrupt
+[panel-4] quitting the program...
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[rviz2-5] Warning: Invalid frame ID "world" passed to canTransform argument target_frame - frame does not exist
+[rviz2-5]          at line 93 in ./src/buffer_core.cpp
+[ERROR] [aruco_node2-6]: process has died [pid 6282, exit code -2, cmd '/home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco/aruco_node2 --ros-args'].
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 6274]
+[INFO] [joy_node-3]: process has finished cleanly [pid 6276]
+[INFO] [panel-4]: process has finished cleanly [pid 6278]
+[INFO] [rviz2-5]: process has finished cleanly [pid 6280]

@@ -1,0 +1,74 @@
+running egg_info
+creating ../../build/ros2_aruco/ros2_aruco.egg-info
+writing ../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+writing requirements to ../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+writing top-level names to ../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+writing manifest file '../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+reading manifest file '../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yasmin/ptp_ws/build/ros2_aruco/build
+creating /home/yasmin/ptp_ws/build/ros2_aruco/build/lib
+creating /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+copying ros2_aruco/orientation.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+copying ros2_aruco/__init__.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+copying ros2_aruco/aruco_node2.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+copying ros2_aruco/robot.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+copying ros2_aruco/panel.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco
+creating /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/markers
+copying ros2_aruco/markers/__init__.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/markers
+copying ros2_aruco/markers/tag_definitions.py -> /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/markers
+running install
+running install_lib
+creating /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+creating /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/markers
+copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/markers/__init__.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/markers
+copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/markers/tag_definitions.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/markers
+copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/orientation.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/__init__.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/aruco_node2.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/robot.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+copying /home/yasmin/ptp_ws/build/ros2_aruco/build/lib/ros2_aruco/panel.py -> /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco
+byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/markers/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/markers/tag_definitions.py to tag_definitions.cpython-310.pyc
+byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/orientation.py to orientation.cpython-310.pyc
+byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/aruco_node2.py to aruco_node2.cpython-310.pyc
+byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/robot.py to robot.cpython-310.pyc
+byte-compiling /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco/panel.py to panel.cpython-310.pyc
+running install_data
+creating /home/yasmin/ptp_ws/install/ros2_aruco/share/ament_index
+creating /home/yasmin/ptp_ws/install/ros2_aruco/share/ament_index/resource_index
+creating /home/yasmin/ptp_ws/install/ros2_aruco/share/ament_index/resource_index/packages
+copying resource/ros2_aruco -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ament_index/resource_index/packages
+copying package.xml -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco
+creating /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model
+creating /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/R_Motor.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/H_Motor.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/Base.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/Translation.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/V_Motor.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/Head.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/3d_mesh.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/panel.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/Meshes/Arm.dae -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes
+copying urdf_model/model.urdf -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/urdf_model
+creating /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/launch
+copying launch/myrobot_launch.py -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/launch
+creating /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/rviz
+copying rviz/config.rviz -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/rviz
+creating /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/ros2_aruco
+copying ros2_aruco/panel1.txt -> /home/yasmin/ptp_ws/install/ros2_aruco/share/ros2_aruco/ros2_aruco
+running install_egg_info
+Copying ../../build/ros2_aruco/ros2_aruco.egg-info to /home/yasmin/ptp_ws/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info
+running install_scripts
+Installing aruco_node2 script to /home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco
+Installing orientation script to /home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco
+Installing panel script to /home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco
+Installing robot script to /home/yasmin/ptp_ws/install/ros2_aruco/lib/ros2_aruco
+writing list of installed files to '/home/yasmin/ptp_ws/build/ros2_aruco/install.log'

@@ -1,0 +1,6 @@
+[console_scripts]
+aruco_node2 = ros2_aruco.aruco_node2:main
+orientation = ros2_aruco.orientation:main
+panel = ros2_aruco.panel:main
+robot = ros2_aruco.robot:main
+
