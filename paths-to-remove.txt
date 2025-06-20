@@ -1,0 +1,2 @@
+src/ros2_aruco/urdf_model/Meshes/Head.dae
+install/ros2_aruco/share/ros2_aruco/urdf_model/Meshes/Head.dae
