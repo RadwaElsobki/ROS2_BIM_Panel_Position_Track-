@@ -1,64 +1,106 @@
 # **Glass Crane Operation Assistance**
 
-## **Description**
+![System Concept](project_img_1.png)
+*Proposal concept: Using ArUco marker detection and BIM integration to guide panel alignment.*
 
-ROS2 package uses OpenCV aruco marker pose detection and BIM integration for glass crane operation assistance
+---
 
-## **Getting Started**
+## **📌 Description**
 
-* Make sure you have [ROS2](https://docs.ros.org/en/humble/Installation.html) Installed on your machine.
-* Create a workspace
+A ROS2-based robotic assistance system for precise, joystick-controlled glass panel placement using a mini crane. The system combines:
 
+- **OpenCV + ArUco marker pose detection**  
+- **BIM-based target pose extraction**  
+- **ROS2 visualization and joystick control**
+
+Developed during Winter 2022 CR Prototyping, it enhances construction safety and precision by providing real-time alignment feedback.
+
+---
+
+## **📸 Project Result Preview**
+
+![RVIZ Visualization](project_img_2.png)
+*Final prototype with panel pose in RVIZ compared to BIM target.*
+
+---
+
+## **🛠 Getting Started**
+
+### Requirements
+
+- [ROS2 Humble](https://docs.ros.org/en/humble/Installation.html)
+- V4L-compatible USB camera driver
+- Joystick for crane control
+
+### Setup
+
+```bash
+mkdir -p ptp_ws/src/
+cd ptp_ws/src
+
+git clone https://github.com/ros-drivers/usb_cam
+git clone https://git.rwth-aachen.de/prototypingproject20222023/ros2_aruco.git
+git clone https://git.rwth-aachen.de/prototypingproject20222023/ros2_aruco_interfaces.git
+git clone <your-repo-url>  # this package
 ```
-$ mkdir -p ptp_ws/src/
+
+- Update camera device in `usb_cam/params.yaml`  
+- Use ArUco marker ID 1 (generate at https://chev.me/arucogen/)  
+- Copy this repository into `ptp_ws/src/`
+
+### Build & Source
+
+```bash
+cd ptp_ws
+colcon build
+source install/setup.bash
 ```
-* Make sure you have a ROS2 Driver for V4L USB Cameras.
-* Change the viedo device parameter in the usb_camera prams.yaml, according to your usb outlet used for your usb camera.
-* If not clone the usb cam demo ros2 branch into the src folder alongside this repository [usb_cam](http://wiki.ros.org/usb_cam)
-* For this project we are using Dictionary orignal aruco `Marker ID 1`
-    * You can generate it online, for example you can use this [Link](https://chev.me/arucogen/)
-* Clone this package into your source folder and don't forget to clone the ros2_aruco_interfaces too.
 
-```
-$ cd ptp_ws/src
-$ git clone https://github.com/ros-drivers/usb_cam
-$ git clone https://git.rwth-aachen.de/prototypingproject20222023/ros2_aruco.git
-$ git clone https://git.rwth-aachen.de/prototypingproject20222023/ros2_aruco_interfaces.git
+---
 
-```
-* Build the package
+## **⚙️ Running**
 
-```
-$ cd .. 
-$ colcon build 
-```
-* Source the overlay
+### Option 1: Terminal Launch
 
-```
-$ . install/setup.bash
-```
-## **Running the Code**
-### ` Option 01 ` 
+1. Start camera:
+   ```bash
+   ros2 launch usb_cam demo_launch.py
+   ```
+2. Connect joystick and configure `robot.py` accordingly  
+3. Launch ArUco pose detection and crane control:
+   ```bash
+   ros2 launch ros2_aruco myrobot_launch.py
+   ```
 
-* Launch the camera
+### Option 2: Desktop Shortcut
 
-```
-$ ros2 launch usb_cam demo_launch.py
-```
-* Make sure your joystick is connected
-* Ajust your joystick axies and buttons in the robot.py file according to your joystick
-* Launch the package
+- Edit `desktop_icon/launch_script/pkg_launch.sh` and `robot.png` paths:
+  ```text
+  Exec=/home/<user>/ptp_ws/src/ros2_aruco/launch_script/pkg_launch.sh
+  Icon=/home/<user>/ptp_ws/src/ros2_aruco/launch_script/robot.png
+  ```
+- Copy `.desktop` files to your desktop and launch with a click
 
-``` 
-$ ros2 launch ros2_aruco myrobot_launch.py
-```
-### ` Option 02 `
+---
 
-* In the desktop_icon folder, change the path in each file:
+## **📈 Contribution & Future Work**
 
-    * (Exec=/home/`user`/ptp_ws/src/ros2_aruco/launch_script/pkg_launch.sh)
-    * (Icon=/home/`user`/ptp_ws/src/ros2_aruco/launch_script/robot.png)
+This is a prototype; planned improvements include:
 
-* Copy the content of the folder to your desktop.
+- IFC/OpenBIM support for target pose extraction  
+- Depth-camera integration for 3D accuracy  
+- Automated crane control using transform computations  
+- Live feedback UI (Dash/Plotly)  
+- Digital twin for crane–panel placement  
 
-* Run the Package.
+Feel free to fork, open issues, or submit PRs!
+
+---
+
+## **👥 Authors**
+
+- Yasmin Ragab  
+- Radwa Abdelhafez  
+- Noureldeen Nagm  
+
+---
